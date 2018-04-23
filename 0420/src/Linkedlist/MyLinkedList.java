@@ -12,18 +12,18 @@ public class MyLinkedList<E> {
 		head = null;
 	}
 
-	public String get(int index) {
+	public E get(int index) {
 		Node temp = head;
 
-		for (int i = 0; i < index; i++) {
+		for (int i = 0; i < index-1; i++) {
 			temp = temp.getNext();
 		}
 
-		return temp.getValue();
+		return (E) temp.getValue();
 
 	}
 
-	public void set(int index, String value) {
+	public void set(int index, E value) {
 
 		if (index == 0) {
 			Node newN = new Node(value);
@@ -34,7 +34,7 @@ public class MyLinkedList<E> {
 
 			Node temp = head;
 
-			for (int i = 0; i < index - 1; i++) {
+			for (int i = 1; i < index - 1; i++) {
 				temp = temp.getNext();
 			}
 			Node newN = new Node(value);
@@ -67,9 +67,7 @@ public class MyLinkedList<E> {
 			head = head.getNext();
 		} else {
 			for (int i = 0; i < index - 2; i++) {
-
 				temp = temp.getNext();
-
 			}
 			temp.setNext(temp.getNext().getNext());
 		}

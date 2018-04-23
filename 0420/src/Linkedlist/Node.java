@@ -1,23 +1,23 @@
 package Linkedlist;
 
-public class Node {
-	private String value;
+public class Node <E>{
+	private E value;
 	private Node next;
 	
 	
-	public String getValue() {
+	public E getValue() {
 		return value;
 	}
 	
 	public Node() {
 		// TODO Auto-generated constructor stub
 	}
-	public Node(String value) {
+	public Node(E value) {
 		// TODO Auto-generated constructor stub
 		this.value = value;
 	}
 
-	public void setValue(String value) {
+	public void setValue(E value) {
 		this.value = value;
 	}
 
