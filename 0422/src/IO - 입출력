@@ -1,0 +1,8 @@
+IO
+다른 프로그램과 데이터를 주고 받는 것 스트림을 이용한다
+인 - input stream
+아웃 - 아웃 stream
+
+Stream 종류 - 바이트,문자
+소스에 데이터를 직접 쓰거나 읽어오는 Stream = 데이터 싱크 Stream
+Stream 을 읽거나 쓰기 편하게 바꿔주는 Stream = 데이터 처리 stream
