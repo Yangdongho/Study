@@ -22,6 +22,12 @@ public class Student implements Serializable{
 		this.age = age;
 	}
 
+	@Override
+	public String toString() {
+		return "Student [school=" + school + ", name=" + name + ", grade=" + grade + ", age=" + age + ", toString()="
+				+ super.toString() + "]";
+	}
+
 	public String getSchool() {
 		return school;
 	}

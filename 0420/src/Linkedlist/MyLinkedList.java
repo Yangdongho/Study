@@ -92,7 +92,7 @@ public class MyLinkedList<E> {
 	}
 
 	public String toString() { // 전체 출력
-		// StringBuilder 생성 후 계속해서 해둥 주소를 참조하여 수정
+		// StringBuilder 생성 후 계속해서 해당 주소를 참조하여 수정
 		// STtring 지속적으로 새로운 객체를 만드는것
 		StringBuilder sb = new StringBuilder();
 		Node cur = head;

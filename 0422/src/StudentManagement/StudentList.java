@@ -15,7 +15,12 @@ public class StudentList {
 
 	public void addStu(Student temp) {
 		Student[] Stu = new Student[nowStuNum + 1];
-		
+		System.out.println(s);    
+		if(nowStuNum>0) {
+		for (int i = 0; i < s.length; i++) {
+			System.out.println(s[i]);
+		}
+		}
 		for (int i = 0; i < nowStuNum; i++) {
 			Stu[i] = s[i];
 			System.out.println(i+"번 배열 복사  "+s[i].getName()+"  "+Stu[i].getName());
