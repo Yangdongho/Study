@@ -22,7 +22,7 @@ public class Server implements Runnable{
 
 			DatagramPacket packet = null;
 			DatagramPacket packet2 = null;
-			Iterator it;
+			Iterator<InetAddress> it;
 			while(true) {
 				System.out.println("수신대기중...");
 				byte[] buf = new byte[512];
@@ -32,7 +32,7 @@ public class Server implements Runnable{
 				it = users.iterator();
 				System.out.println();
 				while(it.hasNext()) {
-					temp = (InetAddress)it.next();
+					temp = (InetAddress)it.next();//데이터 하나씩 가져오기
 					packet2 = new DatagramPacket(buf,buf.length,temp,4000);
 					socket2.send(packet2);
 					System.out.println("i");
