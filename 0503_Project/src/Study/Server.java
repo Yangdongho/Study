@@ -15,17 +15,13 @@ public class Server {
 		//List<Socket> user = new ArrayList<Socket>();
 		Thread t;
 		HashMap<String,List<Stock>> map = new HashMap<String,List<Stock>>();// 매장이름과 Stock객체리스트로 구성된 맵
-		//받아서  DB에 저장하고 보낼때 DB에서 꺼내서 보내주기 유저별 서버 쓰레드가 필요
-		/*String productName; //제품 이룸
-		int number;// 제품 수량
-		int price;*/
 		ArrayList<Stock> list = new ArrayList<Stock>();
-		list.add(new Stock("신라면",100,500));
-		map.put("seoul", list);
+
+		map.put("seoul", new ArrayList<Stock>());
 		map.put("busan", new ArrayList<Stock>());
 		map.put("daejeon", new ArrayList<Stock>());
 		
-//		map.get("seoul").add(new Stock("신라면",100,500));
+		map.get("seoul").add(new Stock("신라면",100,500));
 		map.get("busan").add(new Stock("과자",190,70000));
 		map.get("busan").add(new Stock("커피",110,90000));
 		map.get("busan").add(new Stock("물",1200,78800));

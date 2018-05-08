@@ -8,7 +8,9 @@ public class Stock implements Serializable{
 	int number;// 제품 수량
 	int price;
 	int index;
-	
+	public Stock() {
+		// TODO Auto-generated constructor stub
+	}
 	public Stock(String productName,int number,int price,int index) {
 		// TODO Auto-generated constructor stub
 		this.productName = productName;
@@ -20,11 +22,9 @@ public class Stock implements Serializable{
 	public int getIndex() {
 		return index;
 	}
-
 	public void setIndex(int index) {
 		this.index = index;
 	}
-
 	public String getProductName() {
 		return productName;
 	}
