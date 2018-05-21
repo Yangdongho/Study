@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+
+		.num1{
+			font-size:30px;
+			color:blue;
+		}
+		.num2{
+		font-size:30px;
+			color:red;
+		}
+		
+	
+}
+
+</style>
+<script type="text/javascript">
+
+	//for ,for each ,while ,do-while 모두 자바와 같음
+	for(var i=1;i<31 ;i++){
+		if(i%2==0) {
+			//document.write("<span style =\"color:red\">"+i+"</span>","<br>");
+			document.write("<p class = num1 >"+i+"</p>","<br>");
+			
+			//document.write("짝수");
+		}
+		else{
+			//document.write("<span style =\"color:blue\">"+i+"</span>","<br>");
+			document.write("<p class = num2 >"+i+"</p>","<br>");
+			//document.write("홀수");
+			
+		} 
+	}
+	
+	document.write("<hr>");
+	
+	for(var i =0;i<5;i++){
+		for(var j = 0; j<=i; j++){
+			document.write("*");
+		}	
+		document.write("<br>");
+		
+	}
+	
+	for(var i =1;i<10;i++){
+		for(var j = 1; j<10; j++){
+			document.write(j+" * "+i+" = "+i*j+"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
+		}	
+		document.write("<br>");
+		
+	}
+		
+	
+	
+	
+</script>
+
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+</body>
+</html>

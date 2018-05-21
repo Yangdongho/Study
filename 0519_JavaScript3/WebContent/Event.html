@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+
+	/*
+		이벤트 처리방법
+		
+		1. 요소에 event 속성에 직접 작성
+		
+		2. 스크립트에서 요소 선택해서 이벤트 발생 시 실행할 문장 작성
+			2-1 요서선택.이벤트 = 실행함수
+			2-2 요소선택.addEventListener(이벤트,실행문장:함수,false){
+						
+			}
+			세번째 파라미터 : 이벤트 실행순서,기본값 false
+			
+			
+	
+		이벤트 종류
+		마우스
+			onmouseover = 마우서 오버
+			onmouseout -마우스 요소에서 벗어났을떄
+			onmousemove -마우스가 요소영역에서 움직일대
+			onmouseck 요소 클릭
+			onmouseclick 요소더블클릭
+		키보드
+			onkeypress 키보드 눌렸을때
+			onkeydown 키보드 눌렸을때
+			onkeyup 키보드 올라옴 
+		기타
+			onfocus 요소가 포커스를 얻었을때
+			onblur 요소가 포커스를 잃었을때
+			onchange 요소의 속성값이 변경되었을떄
+			onload 로딩 완료 되었을떄
+			onsubmit form요소에서 submit 버튼이 눌렸을때
+			onreset form 요소에서 reset버튼이 눌렸을때
+			onresize 사이즈가 변경됬을떄
+			onerror	 에러가 발생했을때
+		
+	*/
+	window.onload = function(){
+		var btn2 = document.getElementById("btn2");
+		btn2.onclick = function(){
+			alert('버튼22 눌림');
+		}
+	};
+	
+	function btn3Aert(){
+		alert('버튼33 눌림');
+		
+	}
+	var btn4 = document.getElementById("btn4");
+	btn4.addEventListener("click",function(){
+		alert('버튼4 눌림');
+	},flase);
+	
+	
+
+</script>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<button id = "btn1" onclick = "alert('버튼 눌!!림')"> 버튼1</button>
+	<button id = "btn2"> 버튼2</button>
+	<button id = "btn3" onclick = "btn3Aert()"> 버튼3</button>
+	<button id = "btn4">버튼4</button>
+
+	
+	
+	
+	
+</body>
+</html>

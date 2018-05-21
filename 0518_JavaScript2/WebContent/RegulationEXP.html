@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script type="text/javascript">
+
+/*
+ * RegExp 정규표현객체
+ 	이메일 전화번호 아이디가 제대로 입렷되었는지 확인할 떄 사용
+ 	RegExp;
+ 	new RegExp(패턴,옵션);
+ 	test() true,false
+ 	exec() 있으면 해당단어 반환
+ 	검색 옵션 포현식
+ 	* : 0회이상 일치
+ 	+ : 1회이상 일치
+ 	? : 0회 또는 1회 일치
+ 	i : 영문자의 경우 대소문자 무시
+ 	m : 행이 바뀌어도 규칙에 맞는 문자 찾기
+ 	^ : 문자열의 앞부분이 규칙에 맞는지 확인
+	$ : 문자열의 끝부분이 규칙에 맞는지 확인
+	\d: 숫자하나
+	\s: 공백하나
+	\w: 알파벳,숫자,언더바
+	a|b : a또는 b
+	[0-9] : 숫자
+	[A-Z] : 영대문자
+	[a-z] : 영소문자
+	[가-힣] : 한글
+ 	
+ 	
+ 	
+ */
+	var str = "hello sjklsdfjkl sdjklfjlkf sdfjklsdfjl ";
+ 	var reg = new RegExp("sjk");
+ 	var rs  = reg.test(str);
+ 	alert(rs);
+	
+ 	var nameReg = /^[가-힣]{2,5}$/;
+ 	var phone = /^\d(3,4)\d(4)$/
+ 	
+ 	var phone = prompt("번호를 입력하세요");
+ 	var rs = nameReg.test(username);
+ 	alert(rs);
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+
+</script>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+</body>
+</html>

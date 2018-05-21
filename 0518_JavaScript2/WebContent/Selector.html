@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+/*
+ * 여선택자 사용해보기
+ 	getElementById - 요소 id로 하나선택"WebContent/Array.html"
+ 	getElementsByTagName - 요소 태그이름으로 여러개 선택
+ 	getElementByClassName - 클래스 이름으로 요소 여러개 선택
+ 	
+ 	1 요소노드 <tag>
+ 	2 속성노드 태그의 속성
+ 	3 텍스트노드 태그의내용
+ 	
+ */
+	window.onload = function(){
+		/* document.getElementsByTagName("h1")[0].style.color = "blue";
+		var food = document.getElementById("food2");
+		var myList = document.getElementsByTagName("li"); //배열
+		myList[0].style.backgroundColor = "aqua";
+		food.children[0].style.color = "red";//첫번째 자식요소의 스타일 변경
+		food.firstElementChild.style.color = "orange"; //첫번째 자식요소의 스타일 변경
+		 */
+		var food = document.getElementById("stake")
+		document.write(food.innerHTML);
+		document.write("<br>");
+		food.innerHTML = "ㄴㅇㄹㄴㄹㄴㅇ"
+		document.write(food.innerHTML);
+		
+		
+	};
+
+
+</script>
+
+
+<meta charset="UTF-8">
+<title>123</title>
+</head>
+<body>
+	<h1>인기음식</h1>
+	<div id = "food1">
+		<h2>한식</h2>
+		<ol>
+			<li id = "kimchi">김치</li>
+			<li>비빔박</li>
+			<li>된장찌개</li>
+		
+		</ol>
+	</div>
+	
+	<div id = "food2">
+		<h2>양식</h2>
+		<ol>
+			<li id = "stake">스테이크</li>
+			<li>햄버거</li>
+			<li>피자</li>
+		
+		</ol>
+	
+	</div>
+	
+
+
+</body>
+</html>

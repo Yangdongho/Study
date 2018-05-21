@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+	/* var a = prompt("휴대전화 사용량을 입력하세요 ");
+	alert(a);
+	var b = confirm("휴대전화 사용량을 입력하세요 ");
+	alert(b); */
+	
+	var type = prompt("구글, 네이버 ,다음 중 입력");
+	var url;
+	switch(type){
+		case "네이버":
+			url = "www.naver.com";
+			break;
+		case "구글":
+			url = "www.naver.com";
+			break;
+		case "다음":
+			url = "www.naver.com";
+			break;
+		default:
+			alert("잘못 입력");
+	}
+	//언디파인 0 null  = false로 표시
+	if(url){
+		location.href = "http://"+url;
+		
+	}
+	
+	
+</script>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>hello</h1>
+</body>
+</html>

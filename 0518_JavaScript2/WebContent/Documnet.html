@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+s<script type="text/javascript">
+	/*
+		DOM 문서객체모델
+		html 문서 그 자체의 정보를 가지고 있음
+		선택자를 이용해서 hrml요소 선택하고
+		선택된 요소의 속성 변경
+		
+	*/
+	//문서가 모두 로딩된 후에 fuction을 실행 -> 요소가 생성된 후에 자바스크립트 
+	
+	window.onload = function(){
+		var title = document.getElementById("title");
+		title.style.color="blue";
+		var contents = document.getElementsByTagName("p"); //반환값이 노드리스트
+		alert(typeof contents);
+		contents[0].style.color = "red";
+		contents[1].style.color = "red";
+		contents[2].style.color = "blue";
+		contents[3].style.color = "aqua";
+		
+		
+	};
+	
+
+</script>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	
+	<h1 id = "title">선택자  </h1>
+	<div id = "box">
+		<p>1</p>
+		<p>2</p>
+	</div>
+		<p>3</p>
+		<p>4</p>
+		
+	<!-- <script type="text/javascript">
+		var title = document.getElementById("title");
+		title.style.color="blue";
+		
+		var contents = document.getElementsByTagName("p"); //반환값이 노드리스트
+		alert(typeof contents);
+		contents[0].style.color = "red";
+		contents[1].style.color = "red";
+		contents[2].style.color = "blue";
+		contents[3].style.color = "aqua";
+		
+		
+		
+		
+	</script> -->	
+		
+		
+		
+</body>
+</html>

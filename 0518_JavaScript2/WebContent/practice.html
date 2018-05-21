@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+p {
+	margin-top: 5px;
+	color: red;
+	font-size: 12px;
+}
+</style>
+
+<script type="text/javascript">
+	
+	function move(next){
+		if(event.keyCode==13){//13->엔터
+			alert(next);
+			document.getElementById(next).focus();
+			var temp = document.getElementById("id");
+			var pattern = /^[A-Za-z]{1}[A-Za-z0-9]{3,19}$/;
+			var rs = pattern.test(temp.value);
+			
+			if(rs){
+				temp.innerHTML = <p id ="pname">좋은 아이디 입니다..</p>;
+				alert(temp.innerHTML);
+			}else{
+				temp.innerHTML = <p id="pname">좋은 아이디 입니다..</p>;
+				//document.write(temp.value);
+				alert(temp.innerHTML);
+				
+				//temp.innerHTML = "올바르지 않은 아이디 입니다."
+				//window.location.reload(true);
+			}
+			
+		}
+	}
+
+	window.onload = function(){
+		
+		
+	};
+
+</script>
+<meta charset="UTF-8">
+<title>회원 가입</title>
+</head>
+<body>
+
+	<form>
+		<input id= "id" type= "text" onkeydown = move("password1") > <br>
+		<p id="pname" >필수 정보입니다.</p>
+
+		<input id = "password1" type="password"><br>
+		<p id="pw1">필수 정보입니다.</p>
+
+		<input id = "password2" type="password"><br>
+		<p id="pw2">필수 정보입니다.</p>
+		
+		<br> <input type="submit" value="가입하기">
+
+
+	</form>
+</body>
+</html>

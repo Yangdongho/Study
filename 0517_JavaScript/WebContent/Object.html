@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script type="text/javascript">
+	/*
+		브라우저 객체 모델(BOM: browser object model)
+		:브라우저와 관련된 객체들이 계층적으로 구성되어있는 객체
+		window , screen, location, history, navigator 등
+		window는 location,document의 상위 객체이다.
+
+		
+		문서 객체 모델(DOM: document object model)
+		:HTML문서 그 자체를 의미함
+		dom을 이용해서 html요소에 접근 할 수 있다.
+		최상위 요소 <hrml>을 가지고 하위요소로 구성된다
+		
+		자바스크립트 내장객체
+		String, date,Array,Math,Date,RegExp등이 있다
+	*/
+	
+	var today = new Date();
+	document.write(today.getFullYear()+"년","<br>");
+	document.write((today.getMonth())+1+"월","<br>");
+	document.write(today.getDate()+"일","<br>");
+	document.write(today.getDay()+"요일","<br>");
+	var a  = "abcdef";
+	document.write(a+" , "+typeof a,"<br>");
+
+	document.write(a.blink());
+
+</script>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+</body>
+</html>
